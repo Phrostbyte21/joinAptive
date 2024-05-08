@@ -1,0 +1,282 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #4CAF50; /* Green background */
+        }
+        .section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 50vh; /* Each section takes half of the viewport */
+            text-align: center;
+            color: white; /* White text for contrast */
+        }
+        .button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: white; /* White button */
+            color: #4CAF50; /* Green text */
+            text-decoration: none; /* Remove underline from link */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+        }
+        .button:hover {
+            background-color: #3e8e41; /* Darker green on hover */
+            color: white; /* White text on hover */
+        }
+    </style>
+</head>
+<body>
+
+<div class="section">
+    <h1>Example Text</h1>
+    <img src="https://api.qrserver.com/v1/create-qr-code/?data=Example&size=100x100" alt="QR Code">
+    <a class="button" href="https://example.com" target="_blank">Visit Example</a>
+</div>
+
+<div class="section">
+    <h1>More Example Text</h1>
+    <a class="button" href="https://example.org" target="_blank">Visit Another Example</a>
+</div>
+
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Friends and Family Discount Competition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: rgb(42, 61, 45);
+            color: white;
+            background: url("img/headerImg.jpg") repeat;
+            background-size: cover;
+            backdrop-filter: blur(5px);
+        }
+        a {
+            font-weight: bold;
+        }
+        .container1 {
+            margin: 0 auto;
+            padding: 40px;
+            text-align: center;
+            background-color: rgb(42, 61, 45);
+        }
+        .container2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            height: 250px;
+            max-width: 600px;
+        }
+        .pricing {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f6f8ed;
+        }
+        .dimmer {
+            background: rgba(42, 61, 45, 0.5);
+        }
+        h1 {
+            color: white;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .centered {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10%;
+            background-color: white;
+        }
+        .qr-code {
+            width: 150px;
+            height: 150px;
+        }
+        .qrCodeText p {
+            color: black;
+            margin: 0px;
+            text-align: center;
+        }
+        .link {
+            padding: 10px 20px;
+            background-color: rgb(42, 61, 45);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            padding: 30px 70px 30px 70px;
+        }
+        .link:hover {
+            background-color: rgb(75, 104, 79);
+        }
+        .actionArea {
+            background-color: white;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .decor {
+            background-color: rgb(94, 131, 99);
+            height: 10px;
+        }
+        .pricing {
+            height: 100vh;
+        }
+        .tier1 {
+            background-color: rgb(75, 104, 79);
+            border-radius: 10px;
+            min-height: 100px;
+            min-width: 50px;
+            padding: 0em 2em 0em 2em;
+            margin: 0em 1em 0em 1em;
+            height: 90%;
+            max-width: 300px;
+        }
+        .tier1 h1 {
+            text-align: center;
+        }
+        .initial {
+            background-color: #f6f8ed;
+            color: black;
+            border-radius: 10px;
+            text-align: center;
+            width: 50%;
+            border: green 2px solid;
+        }
+        .strike {
+            text-decoration: line-through;
+        }
+        .prices {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <h1>Welcome to the best deal of your life!</h1>
+    </div>
+    <div class="decor"></div>
+    <div class="dimmer">
+        <div class="container2">
+            <h3>Have you considered trying pest control at your home but just couldn't make the jump because of the price?<br>You won't want to miss out on this amazing discount then! From now through the end of May, when you sign up using my referal link you'll save $110 on a Basic Aptive Pest Control plan!</h3>
+        </div>
+    </div>
+    <div class="decor"></div>
+    <div class="actionArea">
+        <div class="centered">
+            <div class="qrCodeText">
+                <img src="./img/qr.png" alt="Scan to participate" class="qr-code">
+                <p>Scan Me To Save!</p>
+            </div>
+            <a href="https://go.aptive.us/AP032403" class="link">Save Over 50%</a>
+        </div>
+    </div>
+    <div class="pricing">
+        <div class="tier1">
+            <h1>Basic</h1>
+            <div class="prices">
+                <div class="initial">
+                    <h3>Initial</h3>
+                    <h4 class="strike">$399</h4>
+                    <h2>$0</h2>
+                </div>
+                <div class="initial">
+                    <h3>Standard</h3>
+                    <h4 class="strike">$189</h4>
+                    <h2>$79</h2>
+                </div>
+            </div>
+            <p>50-80 days between treatments year-round</p>
+            <p>OPTIONAL SPECIALTY PESTS*:</p>
+            <p>-Outdoor Rodents<br>-Ticks<br>-Pantry Pests<br>-Snails, Slugs & Aphids</p>
+        </div>
+        <div class="tier1">
+            <h1>Pro</h1>
+            <div class="prices">
+                <div class="initial">
+                    <h3>Initial</h3>
+                    <h4 class="strike">$399</h4>
+                    <h2>$0</h2>
+                </div>
+                <div class="initial">
+                    <h3>Standard</h3>
+                    <h4 class="strike">$199</h4>
+                    <h2>$79</h2>
+                </div>
+            </div>
+            <p>30-60 days between treatments April-October</p>
+            <p>50-80 days between treatments November-March</p>
+            <p>INCLUDES:</p>
+            <p>-Outdoor Rodents<br>-Ticks<br>-Pantry Pests<br>-Snails, Slugs & Aphids</p>
+            <p>OPTIONAL SPECIALTY PESTS*:</p>
+            <p>-Mosquitos</p>
+        </div>
+        <div class="tier1">
+            <h1>Premium</h1>
+            <div class="prices">
+                <div class="initial">
+                    <h3>Initial</h3>
+                    <h4 class="strike">$399</h4>
+                    <h2>$0</h2>
+                </div>
+                <div class="initial">
+                    <h3>Standard</h3>
+                    <h4 class="strike">$249</h4>
+                    <h2>$119</h2>
+                </div>
+            </div>
+            <p>20-40 days between treatments April-October</p>
+            <p>50-80 days between treatments November-March</p>
+            <p>INCLUDES:</p>
+            <p>-Outdoor Rodents<br>-Ticks<br>-Pantry Pests<br>-Snails, Slugs & Aphids<br>-Mosquitos</p>
+            <p>OPTIONAL SPECIALTY PESTS*:</p>
+            <p>-German Cockroaches</p>
+        </div>
+    </div>
+    <div class="container1">
+        <h1>Still not convinced?</h1>
+    </div>
+    <div class="decor"></div>
+    <div class="dimmer">
+        <div class="container2">
+            <h3>Aptive Environmental stands by their services and offers free retreatments if the job wasn't done right the first time.<br>100% satisfaction is Aptive's goal, and I wouldn't be referring you to Aptive if I had any doubts that you wouldn't be completely happy with the service you'll receive.</h3>
+        </div>
+    </div>
+    <div class="decor"></div>
+    <div class="actionArea">
+        <div class="centered">
+            <div class="qrCodeText">
+                <img src="./img/qr.png" alt="Scan to participate" class="qr-code">
+                <p>Scan Me To Save!</p>
+            </div>
+            <a href="https://go.aptive.us/AP032403" class="link">Save Over 50%</a>
+        </div>
+    </div>
+</body>
+</html>
